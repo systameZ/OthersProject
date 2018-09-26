@@ -51,9 +51,9 @@ class gui():
             num=self.intext_num_var.get()
             server_list=['248','249','250']
             if server in server_list:
-                link="http://10.80.28."+server+":8080"
+                link="http://127.0.0."+server+":8080"
             else:
-                link="http://10.80.28."+"249"+":8080"
+                link="http://127.0.0.249:8080"
                 messagebox.showinfo('Python Tkinter', '输入的服务器不正确，将下载249服务器视频')
             nowday=self.intext_day_var.get()
             messagebox.showinfo('Python Tkinter', '正在下载，请勿关闭')
