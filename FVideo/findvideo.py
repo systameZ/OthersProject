@@ -32,7 +32,7 @@ class gui():
        # try:
             save_path=self.path.get()
             search_content=self.input_search_var.get()
-            link=["http://10.80.28.248:8080","http://10.80.28.249:8080","http://10.80.28.250:8080"]
+            link=["http://127.0.0.1:8080"]
             get_ip=[]
             get_link=[]
             for i in link:
