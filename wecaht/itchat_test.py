@@ -4,29 +4,14 @@ from itchat.content import *
 import urllib.request,urllib.parse
 import http_request
 #http://api.qingyunke.com/api.php?key=free&appid=0&msg=
-class Qyk_robot:
-    def __call__(self,str):
-        str = '你好'
-        query = {
-            'key': 'free',
-            'appid': '0',
-            'msg': str
-        }
-        req_str = 'http://api.qingyunke.com/api.php?' + urllib.parse.urlencode(query)
-        req = urllib.request.Request(req_str)
-        response = urllib.request.urlopen(req)
-        content = self.splite(response.read().decode('utf-8'))
-        return content
-    def splite(self,str):
-        str_list=str.split(':')
-        return  str_list[2][1:-2]
+
 '''
 ##自动回复的功能
 @itchat.msg_register(itchat.content.TEXT)
 def text_reply(msg):
     return msg['Text']
-#http://api.qingyunke.com/api.php?key=free&appid=0&msg=
 '''
+
 @itchat.msg_register([TEXT,MAP,CARD,NOTE,SHARING])
 def text_reply(msg):
     #qyk=http_request.Qyk_robot()   #青云客API
