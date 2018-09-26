@@ -1,7 +1,6 @@
 import urllib.request,urllib.parse
 import requests
-#http://api.qingyunke.com/api.php?key=free&appid=0&msg=
-#http://www.tuling123.com/openapi/api?key=7403046cfcc8423db07e52b4745db18e&info=%E4%BD%A0%E5%A5%BD
+
 class Qyk_robot:
     def __call__(self,str):
         query = {
