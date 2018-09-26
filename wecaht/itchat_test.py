@@ -1,16 +1,3 @@
-import itchat,time
-#
-# def lc():
-#     print("Finash")
-# def ec():
-#     print("logout")
-# @itchat.msg_register(itchat.content.PICTURE)
-# def text_reply(msg):
-#     print(msg)
-#     itchat.send(msg['Picture'],msg['FromUserName'])
-# itchat.auto_login(hotReload=True)
-# itchat.run()
-
 #coding=utf8
 import itchat,time
 from itchat.content import *
